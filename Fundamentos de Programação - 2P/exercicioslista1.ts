@@ -104,3 +104,56 @@ let salarioAumentado: number = salario * 1.125;
 
 //imprime a
 console.log(`O valor do produto com aumento é ${salarioAumentado}`);
+
+
+
+
+//7
+
+//entrada
+let a = prompt("Digite o primeiro valor");
+let b = prompt("Digite o segundo valor");
+
+
+//transforma em numeros
+let valorA: number = Number(a);
+let valorB: number = Number(b);
+
+
+//troca os valores
+
+let temp: number = valorA;
+valorA = valorB;
+valorB = temp;
+
+
+
+//8
+
+//entrada
+
+let num: string | null = prompt("Digite um número");
+let numero: number = Number(num);
+
+//ele x ele msm
+let quadrado = numero * numero;
+
+//saida
+console.log(`O quadrado do número é ${quadrado}`);
+
+
+
+
+
+
+//9
+//entrada
+let n: string | null = prompt("Digite um número");
+let numInteiro: number = Number(n);
+
+let milhar: number = Math.floor(numInteiro / 1000);
+let centena: number = Math.floor(numInteiro / 100);
+let dezena: number = Math.floor(numInteiro / 10);
+let unidade: number = numInteiro % 10;
+
+console.log(`Milhar: ${milhar}, Centena: ${centena}, Dezena: ${dezena}, Unidade: ${unidade}`);
