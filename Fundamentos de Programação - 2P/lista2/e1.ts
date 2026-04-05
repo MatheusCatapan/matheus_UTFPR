@@ -1,11 +1,11 @@
 //1
 
-const pessoasConfirmadas: number = 20;
-const mediaBebida: number = 300;
-const volumeML: number = 2000;
+let pessoasConfirmadas: number = Number(prompt("Insira a quantidade de pessoas"));
+const MEDIABEBIDA: number = 300;
+const VOLUMEML: number = 2000;
 
-const volumeTotal: number = pessoasConfirmadas * mediaBebida;
-const garrafasNecessarias: number = Math.ceil(volumeTotal / volumeML);
+const volumeTotal: number = pessoasConfirmadas * MEDIABEBIDA;
+const garrafasNecessarias: number = Math.ceil(volumeTotal / VOLUMEML);
 
 console.log(`Serão necessárias ${garrafasNecessarias} garrafas de 2 litros para atender a demanda de ${pessoasConfirmadas} pessoas.`);
 
